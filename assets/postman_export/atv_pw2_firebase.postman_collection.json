@@ -1,0 +1,347 @@
+{
+	"info": {
+		"_postman_id": "e38032d5-0f6e-4eb7-aa6b-e0b44c50e9f8",
+		"name": "atv_pw2_firebase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28072813"
+	},
+	"item": [
+		{
+			"name": "Produto",
+			"item": [
+				{
+					"name": "excluirProduto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/produto/excluirProduto/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"produto",
+								"excluirProduto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cadastrarProduto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "files",
+									"type": "file",
+									"src": [
+										"/C:/Users/holan/OneDrive/ETEC/PW2/Atividade Pratica 02/assets/images/Pequeno Principe - Capa 01.jpeg",
+										"/C:/Users/holan/OneDrive/ETEC/PW2/Atividade Pratica 02/assets/images/Pequeno Principe - Capa 02.jpeg"
+									]
+								},
+								{
+									"key": "nome_produto",
+									"value": "Livro Capa Dura Pequeno Principe",
+									"type": "text"
+								},
+								{
+									"key": "valor_produto",
+									"value": "49,90",
+									"type": "text"
+								},
+								{
+									"key": "descricao_produto",
+									"value": "Livro Pequeno principe edição especial de capa dura.",
+									"type": "text"
+								},
+								{
+									"key": "codigo_categoria",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/produto/cadastrarProduto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"produto",
+								"cadastrarProduto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarProdutos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/produto/listarProduto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"produto",
+								"listarProduto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editarProdutoImagem",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "files",
+									"type": "file",
+									"src": [
+										"/C:/Users/holan/OneDrive/ETEC/PW2/Atividade Pratica 02/assets/images/Pequeno Principe e o Passaro  de Fogo  - Capa 01.jpg",
+										"/C:/Users/holan/OneDrive/ETEC/PW2/Atividade Pratica 02/assets/images/Pequeno Principe e o Passaro  de Fogo  - Capa 02.jpeg"
+									]
+								},
+								{
+									"key": "nome_produto",
+									"value": "Pequeno Principe e o Pássaro  de Fogo",
+									"type": "text"
+								},
+								{
+									"key": "valor_produto",
+									"value": "99,90",
+									"type": "text"
+								},
+								{
+									"key": "descricao_produto",
+									"value": "Livro Pequeno principe edição especial de capa dura e com autografo do autor.",
+									"type": "text"
+								},
+								{
+									"key": "codigo_categoria",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/produto/editarProduto/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"produto",
+								"editarProduto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editarProduto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo_produto\": 1,\r\n    \"nome_produto\": \"Pequeno Principe 2\",\r\n    \"valor_produto\": \"199,90\",\r\n    \"descricao_produto\": \"Livro Pequeno principe edição especial de capa dura e sem autografo do autor.\",\r\n    \"codigo_categoria\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/produto/editarProduto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"produto",
+								"editarProduto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarProdutoCodigo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/produto/listarProduto/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"produto",
+								"listarProduto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categoria",
+			"item": [
+				{
+					"name": "excluirCategoria",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/categoria/excluirCategoria/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categoria",
+								"excluirCategoria",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "cadastrarCategoria",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome_categoria\": \"Livros Fisicos\",\r\n    \"observacoes_categoria\": \"Categoria criada para livros fisicos.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/categoria/cadastrarCategoria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categoria",
+								"cadastrarCategoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarCategorias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/categoria/listarCategoria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categoria",
+								"listarCategoria"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listarCategoriasCodigo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/categoria/listarCategoria/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categoria",
+								"listarCategoria",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alterarCategoria",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"codigo_categoria\": 1,\r\n    \"nome_categoria\": \"Livros\",\r\n    \"observacoes_categoria\": \"Categoria criada para livros fisicos e virtuais\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/categoria/alterarCategoria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"categoria",
+								"alterarCategoria"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "atv_pw2_firebase",
+  "version": "1.0.0",
+  "description": "Atividade de PW2 com Firebase",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "cls || clear",
+    "start": "nodemon index.js",
+    "preinstall": "cls || clear",
+    "postinstall": "node ./scripts/setup.js"
+  },
+  "keywords": [
+    "PW2",
+    "PWII",
+    "ETEC",
+    "API",
+    "REST",
+    "RESTFUL",
+    "CRUD",
+    "CREATE",
+    "READ",
+    "UPDATE",
+    "DELETE",
+    "NODEJS",
+    "JAVASCRIPT",
+    "FIREBASE",
+    "MULTER",
+    "MYSQL2",
+    "SEQUELIZE",
+    "READLINE-SYNC",
+    "EXPRESS",
+    "DOTENV",
+    "NPM",
+    "NODEMON"
+  ],
+  "author": "Guiherme Coutinho",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase": "^10.7.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.6.5",
+    "readline-sync": "^1.4.10",
+    "sequelize": "^6.35.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
